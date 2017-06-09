@@ -9,7 +9,7 @@
 
 @author: Phi Luu
 @created: June 04, 2017
-@updated: June 04, 2017
+@updated: June 08, 2017
 """
 
 maxLength = 1
@@ -19,10 +19,8 @@ startIndex = 0
 # except the special case where there's only 1 character in string
 if len(s) > 1:
     while startIndex < len(s) - 1:
-        # reset the current length
         curLength = 1
 
-        # iterate from startIndex + 1 to the end of string
         for endIndex in range(startIndex + 1, len(s)):
             # break if changes in alphabetical order
             if s[endIndex - 1] > s[endIndex]:
@@ -30,10 +28,10 @@ if len(s) > 1:
             # else, increase the length of the substring
             curLength += 1
 
-        # compare and set the max
+        # set the max
         if curLength > maxLength:
             maxLength = curLength
             maxStr = s[startIndex:startIndex + curLength]
-        # move to the end of the substring and prep new rounds
+        # prep new rounds
         startIndex = endIndex
 print("Longest substring in alphabetical order is: " + maxStr)

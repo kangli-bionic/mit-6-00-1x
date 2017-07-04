@@ -4,4 +4,4 @@ This repository contains my solutions to the problem sets of the edX course [MIT
 
 ## Setting Up Coding Environment
 
-Follow the official step-by-step instruction [here](/set-up-coding-environment.pdf).
+Follow the official step-by-step instruction [here](/set_up_coding_environment.pdf).
